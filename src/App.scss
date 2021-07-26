@@ -3,3 +3,83 @@
 .App {
   text-align: center;
 }
+
+.header {
+  padding: 10px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin: 5px 0;
+  }
+
+  &__item_input {
+    min-width: 300px;
+  }
+
+  &__btn {
+    min-width: 100%;
+  }
+
+}
+
+.message {
+  max-width: 1000px;
+  width: 50%;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.images {
+  margin: 30px 0;
+  &__group {
+    text-align: left;
+    border: #eee 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 40px;
+  }
+
+  &__item {
+    padding: 5px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .images {
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+.header{
+  &__btn {
+    min-width: 80%;
+    padding: 10px 0;
+  }
+}
+  .images {
+    &__item {
+      width: 100%;
+    }
+  }
+}
