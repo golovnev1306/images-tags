@@ -41,7 +41,8 @@
         "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars-experimental": "error",
         "no-unused-vars": "off",
-        "import/prefer-default-export": "warn"
+        "import/prefer-default-export": "warn",
+        "linebreak-style": 0
     },
     "settings": {
         "import/resolver": {
