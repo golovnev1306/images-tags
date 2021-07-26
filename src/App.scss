@@ -34,6 +34,7 @@
 
 .images {
   margin: 30px 0;
+
   &__group {
     text-align: left;
     border: #eee 1px solid;
@@ -64,22 +65,22 @@
 
 @media (max-width: 1024px) {
   .images {
-    &__item {
-      width: 50%;
+    &__list {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
 
 @media (max-width: 600px) {
-.header{
-  &__btn {
-    min-width: 80%;
-    padding: 10px 0;
+  .header {
+    &__btn {
+      min-width: 80%;
+      padding: 10px 0;
+    }
   }
-}
   .images {
-    &__item {
-      width: 100%;
+    &__list {
+      grid-template-columns: 1fr;
     }
   }
 }
