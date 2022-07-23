@@ -18,7 +18,7 @@ const App: FC<MapStateProps & MapDispatchProps> = ({ initApp, isInitialized, mes
     if (message.text) {
       setIsShowMsg(true)
     }
-  }, [message])
+  }, [message]);
 
   return (
     <div className="App">
